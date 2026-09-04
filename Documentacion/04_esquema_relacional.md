@@ -32,7 +32,7 @@ DETALLE_ORDEN_REPUESTO(**id_orden FK → ORDEN_SERVICIO**,
                cantidad, precio_unitario_aplicado)
 ```
 
-**Total: 7 tablas** (cumple el mínimo de 6–8 exigido por la guía).
+
 
 ### Notas de mapeo
 - `DETALLE_ORDEN_REPUESTO` es la tabla intermedia que resuelve la relación M:N entre `ORDEN_SERVICIO` y `REPUESTO` (una orden usa varios repuestos, un repuesto se usa en varias órdenes). Su clave primaria es **compuesta** (`id_orden`, `id_repuesto`).
