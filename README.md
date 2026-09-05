@@ -21,6 +21,7 @@ El sistema permite gestionar clientes, vehículos (bicicletas y motocicletas), m
 | Rafael Mendoza                      | Integrante               |
 | Cristhian Santiago Paba Galindo     | Integrante               |
 | Jhoan Pereira                       | Integrante               |
+| Jimmy Andrés Huertas Novoa          | Integrante               |
 
 ---
 
