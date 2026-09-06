@@ -29,13 +29,13 @@ El sistema permite gestionar clientes, vehículos (bicicletas y motocicletas), m
 
 ```text
 ├── README.md
-├── docs/
+├── Documentacion/
 │   ├── 01_planteamiento.md
 │   ├── 02_requisitos_y_supuestos.md
+│   ├── 03_diagrama_eer.jpeg
 │   ├── 04_esquema_relacional.md
-│   └── 05_diccionario_datos.md
-├── diagramas/
-│   └── eer_autorueda.png
+│   ├── 05_diccionario_datos.md  
+│   └── Entrega1_AutoRueda.pdf
 └── sql/                    ← se usará desde la Entrega 2
 ```
 
