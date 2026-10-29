@@ -3,10 +3,10 @@
 ## 1. Cómo se midió
 
 - **Motor:** PostgreSQL 16 en una base local, con el esquema de las 15 tablas del EER y la semilla `seed/01_semilla.sql` (≈ 20.000 órdenes, 59.556 líneas de repuestos, 3.000 vehículos, 2.000 clientes).
-- **Antes:** solo PK, UNIQUE y el `EXCLUDE` de citas (los índices que PostgreSQL crea solo). **Ninguna FK indexada.**
+- **Antes:** solo PK, UNIQUE de citas (los índices que PostgreSQL crea solo). **Ninguna FK indexada.**
 - **Método por caso:** `ANALYZE` → `EXPLAIN (ANALYZE, BUFFERS)` → crear el índice → `ANALYZE` → mismo `EXPLAIN`. Cada medición se ejecutó dos veces y se reporta la segunda (caché caliente) con `SET jit = off`.
 - Los milisegundos son de una máquina de pruebas y **cambian de equipo en equipo**; lo que importa es el tipo de plan y las páginas leídas (*Buffers*).
-- Los índices están en `migrations/0XX_indices.sql` (se aplica después de las migraciones de tablas).
+- Los índices están en `migrations/005_indices.sql` (se aplica después de las migraciones de tablas).
 
 ## 2. Resumen
 
