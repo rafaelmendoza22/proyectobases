@@ -19,7 +19,7 @@ Gestiona clientes, vehículos (bicicletas y motocicletas), mecánicos, citas, ó
 
 | Nombre | Participación |
 |---|---|
-| Cristhian Santiago Paba Galindo | Esquema relacional y políticas de borrado, normalización, migraciones (DDL) `001–004` y `006`, script de rechazos, declaración de IA, cierre de la entrega |
+| Cristhian Santiago Paba Galindo | Esquema relacional y políticas de borrado, normalización, migraciones (DDL) `001–004` y `006`, script de rechazos, cierre de la entrega |
 | Jimmy Andrés Huertas Novoa | Diagrama EER actualizado |
 | Kevin Arbey Pinzon Sierra | Datos de prueba (semilla) e índices |
 | Jhoan Pereira | Banco de consultas |
