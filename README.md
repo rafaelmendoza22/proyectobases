@@ -104,4 +104,3 @@ psql -d autorueda -f Documentacion/seed/02_rechazos.sql
 - Git + GitHub
 - Draw.io / diagrams.net (diagrama EER)
 - Markdown
-- Claude (Anthropic) como asistente, según se detalla en `09_declaracion_ia.md`
