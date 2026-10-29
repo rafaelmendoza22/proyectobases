@@ -1,6 +1,6 @@
 # 04. Esquema Relacional — AutoRueda Taller Técnico (versión Entrega 2)
 
-> Refleja las migraciones `migrations/001…006`. Convención de nombres de restricciones: `pk_` · `fk_` · `ck_` · `uq_` · `ex_`.
+> Refleja las migraciones `migrations/001…006`. Convención de nombres de restricciones: `pk_` · `fk_` · `ck_` · `uq_`.
 
 ## 1. Tablas (15)
 
@@ -65,7 +65,6 @@ DETALLE_COMPRA(**id_compra FK, id_repuesto FK**, cantidad, costo_unitario)
 |---|---|---|
 | El stock nunca es negativo | `CHECK` en REPUESTO | `ck_repuesto_stock_no_negativo` |
 | Stock mínimo y precios no negativos | `CHECK` | `ck_repuesto_stock_minimo`, `ck_repuesto_precio` |
-| Un mecánico no tiene citas solapadas | `EXCLUDE` (gist) en CITA | `ex_cita_sin_solape_mecanico` |
 | Una cita termina después de empezar (y no cruza de día) | `CHECK` | `ck_cita_horas` |
 | La orden solo tiene 4 estados | `CHECK` | `ck_orden_estado` |
 | No se entrega antes de recibir | `CHECK` | `ck_orden_fechas` |
@@ -81,6 +80,7 @@ DETALLE_COMPRA(**id_compra FK, id_repuesto FK**, cantidad, costo_unitario)
 | Especialidad del mecánico | `CHECK` | `ck_mecanico_especialidad` |
 
 **Reglas que no se pueden declarar con restricciones** (lógica de servidor, para la entrega siguiente):
+- Que un mecánico no tenga dos citas solapadas (se valida en la aplicación antes de registrar la cita).
 - Descontar el stock automáticamente al usar un repuesto en una orden.
 - Que los estados avancen en orden (recibido → en reparación → listo → entregado).
 - Que todo vehículo tenga su fila en BICICLETA o MOTOCICLETA (especialización total).
