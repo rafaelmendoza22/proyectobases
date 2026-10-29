@@ -1,4 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/34129923/README.1.md)
+
 # AutoRueda Taller Técnico
 
 Sistema de Gestión de Órdenes de Servicio e Inventario
