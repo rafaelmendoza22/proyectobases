@@ -11,7 +11,7 @@ Semestre 2026 · PostgreSQL 16+
 Base de datos relacional para el taller **AutoRueda Taller Técnico**, ubicado en Valledupar.
 Gestiona clientes, vehículos (bicicletas y motocicletas), mecánicos, citas, órdenes de servicio, inventario de repuestos y compras a proveedores.
 
-**Entrega 2:** 15 tablas con 65 restricciones con nombre propio (`pk_`, `fk_`, `ck_`, `uq_`, `ex_`), políticas de borrado justificadas, datos de prueba (~20.000 órdenes), índices y vistas.
+**Entrega 2:** 15 tablas con 65 restricciones con nombre propio (`pk_`, `fk_`, `ck_`, `uq_`), políticas de borrado justificadas, datos de prueba (~20.000 órdenes), índices y vistas.
 
 ---
 
